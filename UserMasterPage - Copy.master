@@ -1,0 +1,211 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="UserMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+     <title>Services</title>
+		<meta charset="utf-8">
+		<meta name = "format-detection" content = "telephone=no" />
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.2.1.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.mobilemenu.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script>
+		    $(document).ready(function () {
+		        $().UItoTop({ easingType: 'easeOutQuart' });
+		    });
+		</script>
+         <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts1/icomoon/style.css">
+
+    <link rel="stylesheet" href="css1/bootstrap.min.css">
+    <link rel="stylesheet" href="css1/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css1/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css1/owl.carousel.min.css">
+    <link rel="stylesheet" href="css1/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts1/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css1/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css1/style.css">
+		<!--[if lt IE 8]>
+			<div style=' clear: both; text-align:center; position: relative;'>
+				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+				</a>
+			</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<link rel="stylesheet" media="screen" href="css/ie.css">
+		<![endif]-->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="" id="top">
+		<div class="main">
+<!--==============================header=================================-->
+			<header>
+				<div class="menu_block ">
+					<div class="container_12">
+						<div class="grid_12">
+							<nav class="horizontal-nav full-width horizontalNav-notprocessed">
+
+								<ul class="sf-menu">
+                                   </li>
+                                      <li><a href="HomePage.aspx">Home</a>
+                                                              
+                                    </li>
+									<li><a href="#">Pool Manage</a>
+                                    <ul class="sf-menu">
+                                        <li><a href="UserSearchCarPool.aspx">Search Pool</a></li>
+									    <li><a href="UserDeleteCarpool.aspx">Delete pool </a></li>
+                                        <li><a href="UserJoinCarpool.aspx">Join Pool</a></li>
+                                     
+                                   
+                                    </ul>                                    
+                                    </li>
+									<li><a href="#">Analysis</a>
+                                    <ul class="sf-menu">
+                                        <%--<li><a href="index-1.html">View Members </a></li>--%>
+                                          <li><a href="UserDriverAnalysis.aspx">Driver Analysis </a></li>
+                                            <li><a href="UserRatingPool.aspx">Rate Driver </a></li>
+                                             <li><a href="UserTicket.aspx">Ticket Confirm </a></li>
+									  <%--  <li><a href="index-2.html">View User</a></li>
+                                        <li><a href="index-2.html">View User</a></li>--%>
+                                    </ul>                                    
+                                    </li>
+                                    <li><a href="#">Message</a>
+                                    <ul class="sf-menu">
+                                      <%--  <li><a href="index-1.html">Inbox</a></li>--%>
+									    <li><a href="UserSendComplaint.aspx">Send Message </a></li>
+                     <%--                   <li><a href="index-2.html">View Pool </a></li>--%>
+                                    </ul>                                    
+                                    </li>
+                                    <li><a href="UserSearchMap.aspx">Search Route </a>
+                                    <%--<ul class="sf-menu">
+                                        <li><a href="index-1.html">Inbox Driver</a></li>
+									    <li><a href="index-2.html">Send Driver</a></li>
+                                        <li><a href="index-2.html">Send to User</a></li>
+                                        <li><a href="index-2.html">Inbox User</a></li>
+                                    </ul> 
+                                         --%>  
+                                         </li>                            
+                                      <li><a href="SignOut.aspx">Sign out</a>
+                                                              
+                                    </li>
+								</ul>
+							</nav>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="container_12">
+					<div class="grid_12">
+						<h1>
+							&nbsp;</h1>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</header>
+<!--==============================Content=================================-->
+			<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - April 07, 2018!</div>
+				<div class="container_12">
+					<div class="grid_12">
+						<%--<h3>Services Overview</h3>--%>
+                        <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+
+					</div>
+					
+					
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <h2 class="footer-heading mb-4">About Us</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+          </div>
+          <div class="col-lg-8 ml-auto">
+            <div class="row">
+              <div class="col-lg-3">
+                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>                                document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+    
+    
+</body>
+</html>
